@@ -1,0 +1,193 @@
+/* GLOBAL STYLES */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+body{
+    background-color: #131313;
+}
+
+
+/* NAVBAR STYLES */
+
+.navbar{
+    display: flex;
+    background-color: #131313;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 60px;
+
+}
+
+.navbar h1{
+    color: #fff;
+    margin-right: auto;
+    font-weight: 100;
+}
+
+
+
+.navbar li{
+    display: inline-block;
+
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #fff;
+    padding: 20px;
+
+}
+
+.navbar a:hover{
+    color: #a2a8d3;
+}
+
+/* MAIN CONTENT */
+
+.cardsContainer{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px auto;
+}
+
+
+
+
+
+.cardsContainer :nth-child(1){
+    background-image: url(https://www.apple.com/v/airpods-max/g/images/overview/product-stories/hifi-sound/modal/audio_bc_microphone__c4kgd4pga3cm_large.png);
+    background-position: center;
+    background-size: contain;
+
+}
+
+.cardsContainer :nth-child(2){
+    background-image: url(https://www.apple.com/v/mac-studio/f/images/overview/hero/mx_ultra__b7zrsiv2zomq_large.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+.cardsContainer :nth-child(3){
+    background-image: url(https://www.apple.com/es/iphone-16-pro/images/overview/media-card/highlights_camera_control_endframe__dnpy5lekpmwm_small.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 3;
+}
+
+.cardsContainer :nth-child(4){
+    background-image: url(https://www.apple.com/v/ipad-pro/an/images/overview/closer-look/space-black/slide_3A__fmel0mesnxqq_large.jpg);
+    background-position: center;
+    grid-column: span 2;
+}
+
+.cardsContainer :nth-child(5){
+    background-image: url(https://www.apple.com/v/ipad-pro/an/images/overview/closer-look/space-black/slide_1A__cxvssgdj2v6u_large.jpg);
+    background-position: bottom;
+    background-size: contain;
+}
+
+.cardsContainer :nth-child(6){
+    background-image: url(https://www.apple.com/es/iphone-16-pro/images/overview/media-card/thin__eqeewfn1mgsy_small.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 2;
+}
+
+.cardsContainer :nth-child(7){
+    background-image: url(https://www.apple.com/es/iphone-16-pro/images/overview/product-viewer/iphone-pro/all_colors__fdpduog7urm2_small.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 2;
+}
+
+.cardsContainer :nth-child(8){
+    background-image: url(https://www.apple.com/v/iphone-16-pro/a/images/overview/welcome/hero_endframe__b3cjfkquc2s2_medium.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-column: 3/8;
+    grid-row: 2/4;
+}
+
+.cardsContainer :nth-child(9){
+    background-image: url(https://www.apple.com/v/ipad-pro/an/images/overview/closer-look/space-black/slide_4A__c2suhzbfcl8i_large.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: span 3;
+}
+
+.cardsContainer :nth-child(10){
+    background-image: url(https://www.apple.com/v/macbook-pro/ak/images/overview/contrast/product_tile_mbp_14_16__br3iijc0eys2_large.png);
+    background-position: center;
+    background-size: contain;
+    grid-column: span 2;
+}
+
+.cardsContainer :nth-child(11){
+    background-image: url(https://www.apple.com/es/apple-watch-ultra-2/images/overview/design/design__b9gbjygmamxe_small.jpg);
+    background-position: center;
+    grid-column: span 2;
+}
+.cardsContainer :nth-child(12){
+    background-image: url(https://www.apple.com/v/apple-watch-ultra-2/e/images/overview/hero/hero_startframe__nw3b5tuhujum_small.jpg);
+    background-position: center;
+
+}
+
+.cardsContainer :nth-child(13){
+    background-image: url(https://www.apple.com/v/macbook-pro/ak/images/overview/highlights/highlights_display_endframe__dwv614foqk66_large.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-column: span 2;
+}
+
+.cardsContainer :nth-child(14){
+    background-image: url(https://www.apple.com/v/macbook-pro/ak/images/overview/highlights/highlights_chips_endframe__dt97zqlnjpme_large.jpg);
+    background-position: center;
+    background-size: contain;
+    grid-column: span 5;
+}
+.cardsContainer :nth-child(15){
+    background-image: url(https://www.apple.com/es/iphone-16-pro/images/overview/media-card/highlights_ios18__esdley4zqkya_small.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cardsContainer :nth-child(16){
+    grid-column: span 2;
+    background-image: url(https://www.apple.com/v/airpods-pro/l/images/overview/noise_cancel_airpod__bewzeymccxxu_large.jpg);
+    background-position: center;
+
+}
+
+
+.card{
+    min-height: 200px;
+    background-color: #000000;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    transition: 1s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* .text{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+} */
